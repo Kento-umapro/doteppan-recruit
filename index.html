@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>どてっぱん 採用 | 株式会社うまプロ</title>
+<meta name="description" content="東京もんじゃ・鉄板焼酒場 どてっぱん／株式会社うまプロの正社員（中途）採用。下町の食文化を、人の力で世界へ。">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="images/do_mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap">
+
+<style>
+  :root{
+    --paper:#f7f3ea;
+    --paper2:#efe7d2;
+    --sumi:#1a1714;
+    --sumi2:#332d24;
+    --aka:#d4452e;
+    --aka2:#b8341e;
+    --gold:#b89762;
+    --line:#1a1714;
+    --line-soft:#bfb39a;
+    --muted:#7a7062;
+    --display:"Belanosima","Noto Serif JP",serif;
+    --serif:"Noto Serif JP",serif;
+    --gothic:"Noto Sans JP",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--gothic);
+    color:var(--sumi);
+    background:var(--paper);
+    line-height:1.95;
+    font-size:15px;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(180,150,100,.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(180,150,100,.04) 0%, transparent 50%);
+  }
+
+  .bg-grid{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    background-image:
+      linear-gradient(to right, rgba(26,23,20,.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(26,23,20,.04) 1px, transparent 1px);
+    background-size:60px 60px;
+  }
+
+  .side-lines{
+    position:fixed;
+    top:0;
+    bottom:0;
+    width:100%;
+    pointer-events:none;
+    z-index:2;
+  }
+  .side-lines::before,
+  .side-lines::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:1px;
+    background:var(--line);
+    opacity:.08;
+  }
+  .side-lines::before{left:48px}
+  .side-lines::after{right:48px}
+  @media(max-width:680px){
+    .side-lines::before{left:18px}
+    .side-lines::after{right:18px}
+  }
+
+  header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:50;
+    padding:22px 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    pointer-events:none;
+    transition:.3s;
+  }
+  header > *{pointer-events:auto}
+  .h-date{
+    font-family:var(--display);
+    font-size:.78rem;
+    letter-spacing:.16em;
+    color:var(--sumi);
+    opacity:.75;
+    min-width:120px;
+  }
+  .h-logo-wrap{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+  }
+  .h-logo-img{
+    height:42px;
+    width:auto;
+    display:block;
+  }
+  .h-logo-sub{
+    font-family:var(--display);
+    font-size:.62rem;
+    letter-spacing:.3em;
+    color:var(--aka);
+    font-weight:600;
+  }
+  .h-menu{
+    font-family:var(--display);
+    font-size:.78rem;
+    letter-spacing:.18em;
+    color:var(--sumi);
+    cursor:pointer;
+    min-width:120px;
+    text-align:right;
+  }
+  @media(max-width:680px){
+    header{padding:14px 24px}
+    .h-date{font-size:.6rem;min-width:0}
+    .h-menu{font-size:.65rem;min-width:0}
+    .h-logo-img{height:32px}
+    .h-logo-sub{font-size:.55rem}
+  }
+
+  .side-nav{
+    position:fixed;
+    bottom:60px;
+    left:60px;
+    z-index:40;
+    font-family:var(--display);
+    font-size:.7rem;
+    letter-spacing:.18em;
+    color:var(--sumi);
+    opacity:.7;
+  }
+  .side-nav ul{list-style:none;display:flex;gap:22px}
+  .side-nav a:hover{color:var(--aka);opacity:1}
+  @media(max-width:820px){.side-nav{display:none}}
+
+  .copy{
+    position:fixed;
+    bottom:60px;
+    right:60px;
+    z-index:40;
+    font-family:var(--display);
+    font-size:.65rem;
+    letter-spacing:.18em;
+    color:var(--sumi);
+    opacity:.5;
+  }
+  @media(max-width:820px){.copy{display:none}}
+
+  .story{
+    position:relative;
+    padding:140px 60px 60px;
+    z-index:5;
+  }
+  @media(max-width:680px){.story{padding:100px 24px 40px}}
+
+  .notebooks{
+    max-width:1200px;
+    margin:0 auto;
+  }
+
+  .notebook{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+    min-height:80vh;
+    padding:60px 0;
+    border-bottom:1px dashed var(--line-soft);
+    position:relative;
+  }
+  .notebook:last-child{border-bottom:none}
+
+  .nb-text{position:relative}
+
+  .nb-index{
+    font-family:var(--display);
+    font-size:7rem;
+    font-weight:700;
+    line-height:.9;
+    color:var(--sumi);
+    margin-bottom:30px;
+    position:relative;
+    display:inline-block;
+  }
+  .nb-index::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:18px;
+    width:54px;
+    height:1px;
+    background:var(--aka);
+  }
+  .nb-index small{
+    font-family:var(--display);
+    font-size:.95rem;
+    font-weight:600;
+    letter-spacing:.3em;
+    color:var(--aka);
+    display:block;
+    margin-bottom:10px;
+    line-height:1;
+  }
+
+  .nb-ja{
+    font-family:var(--serif);
+    font-size:1.95rem;
+    font-weight:500;
+    line-height:1.95;
+    color:var(--sumi);
+    letter-spacing:.06em;
+    margin-bottom:34px;
+  }
+  .nb-ja em{
+    font-style:normal;
+    color:var(--aka);
+    font-weight:700;
+    border-bottom:1px solid var(--aka);
+    padding-bottom:2px;
+  }
+
+  .nb-en{
+    font-family:var(--display);
+    font-size:.85rem;
+    line-height:1.85;
+    color:var(--muted);
+    letter-spacing:.06em;
+    font-style:italic;
+  }
+
+  .nb-vis{
+    position:relative;
+    aspect-ratio:1/1;
+    max-width:480px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .nb-vis svg{width:100%;height:auto;overflow:visible}
+  .nb-vis::before{
+    content:"";
+    position:absolute;
+    inset:18px;
+    border:1px solid var(--line-soft);
+    z-index:0;
+    pointer-events:none;
+  }
+  .nb-vis.photo{overflow:hidden}
+  .nb-vis.photo::before{inset:0;border:none}
+  .nb-vis.photo .frame{
+    position:absolute;
+    inset:18px;
+    overflow:hidden;
+  }
+  .nb-vis.photo .frame::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:1px solid var(--line);
+    opacity:.1;
+    pointer-events:none;
+  }
+  .nb-vis.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:saturate(.9) contrast(1.05);
+    transition:transform 8s ease;
+  }
+  .notebook.in .nb-vis.photo img{transform:scale(1.06)}
+  .nb-vis.photo::after{
+    content:"";
+    position:absolute;
+    top:6px;
+    left:50%;
+    transform:translateX(-50%) rotate(-2deg);
+    width:80px;
+    height:18px;
+    background:rgba(180,150,100,.45);
+    z-index:2;
+    box-shadow:0 1px 2px rgba(0,0,0,.06);
+  }
+
+  @media(max-width:880px){
+    .notebook{grid-template-columns:1fr;gap:40px;min-height:auto;padding:50px 0}
+    .nb-index{font-size:5rem}
+    .nb-ja{font-size:1.4rem}
+    .nb-vis{max-width:340px}
+  }
+
+  .outro{
+    position:relative;
+    z-index:5;
+    padding:140px 60px;
+    text-align:center;
+    background:var(--sumi);
+    color:var(--paper);
+    margin-top:60px;
+  }
+  .outro-mark{
+    font-family:var(--display);
+    font-size:.75rem;
+    letter-spacing:.32em;
+    color:var(--gold);
+    margin-bottom:30px;
+  }
+  .outro-text{
+    font-family:var(--serif);
+    font-size:1.7rem;
+    line-height:2.1;
+    font-weight:500;
+    letter-spacing:.06em;
+    max-width:760px;
+    margin:0 auto 50px;
+  }
+  .outro-text em{font-style:normal;color:#e2674c;font-weight:700}
+  .btn-cta{
+    display:inline-flex;
+    align-items:center;
+    gap:20px;
+    font-family:var(--display);
+    font-size:.85rem;
+    letter-spacing:.24em;
+    color:var(--paper);
+    border:1px solid var(--paper);
+    padding:22px 44px;
+    transition:.3s;
+    position:relative;
+    overflow:hidden;
+  }
+  .btn-cta::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:var(--aka);
+    transform:translateY(101%);
+    transition:.4s cubic-bezier(.7,0,.3,1);
+    z-index:-1;
+  }
+  .btn-cta:hover::before{transform:translateY(0)}
+  .btn-cta:hover{border-color:var(--aka)}
+  .btn-cta .arrow{
+    width:28px;
+    height:1px;
+    background:var(--paper);
+    position:relative;
+    transition:.3s;
+  }
+  .btn-cta .arrow::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:-3px;
+    width:8px;
+    height:8px;
+    border-top:1px solid var(--paper);
+    border-right:1px solid var(--paper);
+    transform:rotate(45deg);
+  }
+  .btn-cta:hover .arrow{width:44px}
+  @media(max-width:680px){
+    .outro{padding:90px 24px}
+    .outro-text{font-size:1.2rem}
+  }
+
+  .interviews{
+    position:relative;
+    z-index:5;
+    padding:140px 60px 60px;
+  }
+  @media(max-width:680px){.interviews{padding:90px 24px 40px}}
+
+  .iv-inner{max-width:1100px;margin:0 auto}
+
+  .sec-head{
+    display:flex;
+    align-items:baseline;
+    gap:24px;
+    margin-bottom:30px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--line);
+  }
+  .sec-head .num{
+    font-family:var(--display);
+    font-size:2rem;
+    font-weight:700;
+    color:var(--sumi);
+    line-height:1;
+  }
+  .sec-head .label{
+    font-family:var(--display);
+    font-size:.78rem;
+    letter-spacing:.28em;
+    color:var(--aka);
+  }
+  .sec-head h2{
+    font-family:var(--serif);
+    font-size:2.2rem;
+    font-weight:700;
+    color:var(--sumi);
+    letter-spacing:.04em;
+    margin-left:auto;
+  }
+  @media(max-width:680px){
+    .sec-head{flex-wrap:wrap;gap:12px}
+    .sec-head h2{font-size:1.4rem;width:100%;margin-left:0;margin-top:8px}
+  }
+
+  .iv-lead{
+    font-family:var(--serif);
+    font-size:1.3rem;
+    line-height:2;
+    color:var(--sumi);
+    max-width:680px;
+    margin-bottom:80px;
+    font-weight:500;
+  }
+
+  .iv-card{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:60px;
+    padding:80px 0;
+    border-top:1px solid var(--line-soft);
+    align-items:start;
+  }
+  .iv-card:first-of-type{border-top:1px solid var(--line)}
+  .iv-card:nth-child(even){grid-template-columns:1fr 380px}
+  .iv-card:nth-child(even) .iv-photo{order:2}
+  .iv-card:nth-child(even) .iv-body{order:1}
+
+  .iv-photo{
+    position:relative;
+    aspect-ratio:3/4;
+  }
+  .iv-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:saturate(.9) contrast(1.05);
+  }
+  .iv-photo::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:1px solid var(--line);
+    opacity:.1;
+    pointer-events:none;
+    z-index:2;
+  }
+  .iv-photo .placeholder{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:var(--paper2);
+    background-image:repeating-linear-gradient(45deg,transparent 0 12px,rgba(180,150,100,.2) 12px 13px);
+    color:var(--muted);
+    font-family:var(--display);
+    font-size:.7rem;
+    letter-spacing:.24em;
+    gap:14px;
+    text-align:center;
+    padding:24px;
+  }
+  .iv-photo .placeholder svg{width:60px;height:60px;opacity:.4}
+  .iv-no{
+    font-family:var(--display);
+    font-size:.78rem;
+    letter-spacing:.28em;
+    color:var(--aka);
+    margin-bottom:18px;
+  }
+  .iv-title{
+    font-family:var(--serif);
+    font-size:1.6rem;
+    line-height:1.7;
+    color:var(--sumi);
+    font-weight:700;
+    letter-spacing:.04em;
+    margin-bottom:30px;
+    border-bottom:1px solid var(--line-soft);
+    padding-bottom:24px;
+  }
+  .iv-meta{
+    display:flex;
+    gap:24px;
+    margin-bottom:26px;
+    flex-wrap:wrap;
+    align-items:baseline;
+  }
+  .iv-name{
+    font-family:var(--serif);
+    font-size:1.2rem;
+    font-weight:700;
+    color:var(--sumi);
+    letter-spacing:.06em;
+  }
+  .iv-name small{
+    display:block;
+    font-family:var(--display);
+    font-size:.62rem;
+    letter-spacing:.24em;
+    color:var(--aka);
+    font-weight:600;
+    margin-bottom:4px;
+  }
+  .iv-role{
+    font-family:var(--gothic);
+    font-size:.78rem;
+    color:var(--muted);
+    letter-spacing:.06em;
+    padding:4px 12px;
+    border:1px solid var(--line-soft);
+  }
+  .iv-text p{
+    color:var(--sumi2);
+    font-size:.94rem;
+    line-height:2.05;
+    margin-bottom:18px;
+  }
+  .iv-text p:last-child{margin-bottom:0}
+  .iv-text .q{
+    font-family:var(--serif);
+    color:var(--aka);
+    font-weight:700;
+    margin-top:24px;
+    margin-bottom:8px;
+    font-size:.95rem;
+    letter-spacing:.04em;
+  }
+  .iv-text .q::before{
+    content:"Q. ";
+    font-family:var(--display);
+    margin-right:2px;
+  }
+
+  @media(max-width:880px){
+    .iv-card,.iv-card:nth-child(even){grid-template-columns:1fr;gap:30px}
+    .iv-card:nth-child(even) .iv-photo,.iv-card:nth-child(even) .iv-body{order:initial}
+    .iv-photo{max-width:340px;margin:0 auto}
+    .iv-title{font-size:1.25rem}
+  }
+
+  /* ============ OFF-DUTY (new section) ============ */
+  .offduty{
+    position:relative;
+    z-index:5;
+    padding:140px 60px;
+    background:var(--paper2);
+  }
+  @media(max-width:680px){.offduty{padding:90px 24px}}
+  .od-inner{
+    max-width:1100px;
+    margin:0 auto;
+  }
+  .od-lead{
+    font-family:var(--serif);
+    font-size:1.4rem;
+    line-height:2;
+    color:var(--sumi);
+    max-width:680px;
+    margin-bottom:80px;
+    font-weight:500;
+  }
+  .od-lead em{
+    font-style:normal;
+    color:var(--aka);
+    font-weight:700;
+  }
+  .od-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+  }
+  .od-photo{
+    position:relative;
+    overflow:hidden;
+    background:#000;
+  }
+  .od-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:saturate(.9) contrast(1.05);
+    transition:transform 6s ease;
+  }
+  .od-photo:hover img{transform:scale(1.05)}
+  .od-photo .cap{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:46px 28px 22px;
+    background:linear-gradient(transparent, rgba(20,16,13,.85));
+    color:var(--paper);
+    z-index:2;
+  }
+  .od-photo .cap .tag{
+    font-family:var(--display);
+    font-size:.65rem;
+    letter-spacing:.28em;
+    color:var(--gold);
+    margin-bottom:6px;
+  }
+  .od-photo .cap .ttl{
+    font-family:var(--serif);
+    font-size:1.05rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    line-height:1.6;
+  }
+  .od-photo.tall{aspect-ratio:3/4}
+  .od-photo.square{aspect-ratio:4/3}
+  @media(max-width:680px){
+    .od-grid{grid-template-columns:1fr}
+    .od-photo.tall,.od-photo.square{aspect-ratio:4/3}
+  }
+
+  /* ============ INFO ============ */
+  .info{position:relative;z-index:5;padding:140px 60px 60px}
+  @media(max-width:680px){.info{padding:90px 24px 40px}}
+  .info-inner{max-width:980px;margin:0 auto}
+
+  .why-block{margin-bottom:120px}
+  .why-lead{
+    font-family:var(--serif);
+    font-size:1.4rem;
+    line-height:1.95;
+    color:var(--sumi);
+    max-width:680px;
+    margin-bottom:60px;
+    font-weight:500;
+  }
+  .why-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .stat-cell{
+    padding:36px 24px;
+    text-align:center;
+    border-right:1px solid var(--line-soft);
+  }
+  .stat-cell:last-child{border-right:none}
+  .stat-cell .n{
+    font-family:var(--display);
+    font-size:3.2rem;
+    font-weight:700;
+    color:var(--sumi);
+    line-height:1;
+  }
+  .stat-cell .n small{font-size:1.1rem;color:var(--aka);margin-left:4px}
+  .stat-cell .t{
+    margin-top:14px;
+    font-family:var(--gothic);
+    font-size:.82rem;
+    color:var(--muted);
+    letter-spacing:.04em;
+  }
+  @media(max-width:680px){
+    .why-stats{grid-template-columns:1fr}
+    .stat-cell{border-right:none;border-bottom:1px solid var(--line-soft)}
+    .stat-cell:last-child{border-bottom:none}
+    .stat-cell .n{font-size:2.4rem}
+  }
+
+  .job-block{margin-bottom:120px}
+  .job-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border:1px solid var(--line);
+  }
+  .job-cell{padding:40px 36px;border-right:1px solid var(--line)}
+  .job-cell:last-child{border-right:none}
+  .job-cell .badge{
+    font-family:var(--display);
+    font-size:.7rem;
+    letter-spacing:.24em;
+    color:var(--aka);
+    margin-bottom:18px;
+  }
+  .job-cell h3{
+    font-family:var(--serif);
+    font-size:1.5rem;
+    color:var(--sumi);
+    margin-bottom:18px;
+    font-weight:700;
+    letter-spacing:.04em;
+  }
+  .job-cell p{
+    color:var(--sumi2);
+    font-size:.92rem;
+    line-height:1.95;
+  }
+  @media(max-width:680px){
+    .job-grid{grid-template-columns:1fr}
+    .job-cell{border-right:none;border-bottom:1px solid var(--line)}
+    .job-cell:last-child{border-bottom:none}
+  }
+
+  .grade-block{margin-bottom:120px}
+  .grade-list{border-top:1px solid var(--line)}
+  .grade-row{
+    display:grid;
+    grid-template-columns:200px 1fr 180px;
+    gap:30px;
+    padding:32px 4px;
+    border-bottom:1px solid var(--line-soft);
+    align-items:baseline;
+  }
+  .grade-row .g-name{
+    font-family:var(--serif);
+    font-size:1.3rem;
+    font-weight:700;
+    color:var(--sumi);
+    letter-spacing:.04em;
+  }
+  .grade-row .g-name small{
+    display:block;
+    font-family:var(--display);
+    font-size:.65rem;
+    letter-spacing:.24em;
+    color:var(--aka);
+    margin-bottom:6px;
+    font-weight:600;
+  }
+  .grade-row .g-role b{
+    display:block;
+    color:var(--sumi);
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .grade-row .g-role{font-size:.9rem;color:var(--sumi2);line-height:1.85}
+  .grade-row .g-pay{
+    text-align:right;
+    font-family:var(--display);
+    font-weight:700;
+    color:var(--sumi);
+    font-size:1.15rem;
+    line-height:1.4;
+  }
+  .grade-row .g-pay small{
+    display:block;
+    font-family:var(--gothic);
+    font-size:.7rem;
+    color:var(--muted);
+    font-weight:400;
+    margin-top:4px;
+    letter-spacing:.04em;
+  }
+  @media(max-width:680px){
+    .grade-row{grid-template-columns:1fr;gap:10px}
+    .grade-row .g-pay{text-align:left}
+  }
+
+  .req-block{margin-bottom:120px}
+  .req-tbl{width:100%;border-collapse:collapse;border-top:1px solid var(--line)}
+  .req-tbl th,.req-tbl td{
+    padding:22px 8px;
+    text-align:left;
+    border-bottom:1px solid var(--line-soft);
+    font-size:.9rem;
+    vertical-align:top;
+  }
+  .req-tbl th{
+    width:160px;
+    font-family:var(--serif);
+    font-weight:700;
+    color:var(--sumi);
+    letter-spacing:.06em;
+  }
+  .req-tbl td{color:var(--sumi2);line-height:1.85}
+
+  .flow{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+    margin-top:50px;
+    border:1px solid var(--line);
+  }
+  .step{padding:32px 24px;text-align:center;border-right:1px solid var(--line)}
+  .step:last-child{border-right:none}
+  .step .num{
+    font-family:var(--display);
+    font-size:1.6rem;
+    color:var(--aka);
+    margin-bottom:10px;
+    font-weight:700;
+    line-height:1;
+  }
+  .step b{
+    display:block;
+    font-family:var(--serif);
+    color:var(--sumi);
+    margin-bottom:6px;
+    font-size:1.05rem;
+  }
+  .step small{color:var(--muted);font-size:.8rem}
+  @media(max-width:680px){
+    .flow{grid-template-columns:1fr}
+    .step{border-right:none;border-bottom:1px solid var(--line)}
+    .step:last-child{border-bottom:none}
+  }
+
+  .entry-block{
+    background:var(--sumi);
+    color:var(--paper);
+    padding:120px 60px;
+    margin-top:80px;
+    position:relative;
+    overflow:hidden;
+  }
+  .entry-block::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:300px;
+    height:300px;
+    background-image:url('images/do_mark.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:right top;
+    opacity:.05;
+    filter:invert(1);
+    pointer-events:none;
+  }
+  .entry-inner{
+    max-width:680px;
+    margin:0 auto;
+    position:relative;
+    z-index:2;
+  }
+  .entry-mark{
+    font-family:var(--display);
+    font-size:.75rem;
+    letter-spacing:.3em;
+    color:var(--gold);
+    margin-bottom:24px;
+    text-align:center;
+  }
+  .entry-block h2{
+    font-family:var(--serif);
+    font-size:2.4rem;
+    text-align:center;
+    margin-bottom:18px;
+    font-weight:700;
+    letter-spacing:.04em;
+  }
+  .entry-block .lead{
+    text-align:center;
+    color:#cbbfae;
+    margin-bottom:50px;
+  }
+  .entry-block .form label{
+    display:block;
+    margin:18px 0 8px;
+    font-family:var(--display);
+    font-size:.72rem;
+    letter-spacing:.18em;
+    color:var(--gold);
+  }
+  .entry-block .form input,
+  .entry-block .form select,
+  .entry-block .form textarea{
+    width:100%;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #4a4136;
+    color:var(--paper);
+    font-family:var(--gothic);
+    font-size:.95rem;
+    padding:12px 4px;
+    outline:none;
+    transition:.2s;
+  }
+  .entry-block .form input:focus,
+  .entry-block .form select:focus,
+  .entry-block .form textarea:focus{border-bottom-color:var(--aka)}
+  .entry-block .form select option{background:var(--sumi);color:var(--paper)}
+  .entry-block .submit{
+    display:block;
+    margin:50px auto 0;
+    background:var(--aka);
+    border:1px solid var(--aka);
+    color:var(--paper);
+    font-family:var(--display);
+    font-size:.85rem;
+    letter-spacing:.24em;
+    padding:22px 60px;
+    cursor:pointer;
+    transition:.3s;
+  }
+  .entry-block .submit:hover{background:transparent;color:var(--paper)}
+  @media(max-width:680px){
+    .entry-block{padding:90px 24px}
+    .entry-block h2{font-size:1.6rem}
+  }
+
+  footer{
+    background:var(--sumi2);
+    color:var(--paper);
+    padding:50px 60px;
+    text-align:center;
+    font-size:.78rem;
+    letter-spacing:.06em;
+    line-height:2;
+  }
+  footer .f-logo{
+    height:36px;
+    width:auto;
+    margin:0 auto 14px;
+    filter:invert(1) brightness(1.2);
+    opacity:.85;
+  }
+  footer a{
+    color:var(--gold);
+    border-bottom:1px solid transparent;
+    transition:.2s;
+  }
+  footer a:hover{border-bottom-color:var(--gold)}
+
+  @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes drawLine{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+  @keyframes steam{
+    0%{transform:translateY(0) scale(1);opacity:.6}
+    50%{transform:translateY(-30px) scale(1.3);opacity:.3}
+    100%{transform:translateY(-60px) scale(1.6);opacity:0}
+  }
+  @keyframes bobble{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-4px)}
+  }
+  .reveal{opacity:0}
+  .reveal.in{animation:fadeUp 1.2s cubic-bezier(.2,.7,.3,1) forwards}
+  .draw path,.draw circle,.draw rect,.draw line,.draw polygon,.draw polyline{
+    stroke-dasharray:1000;
+    stroke-dashoffset:1000;
+  }
+  .in .draw path,.in .draw circle,.in .draw rect,.in .draw line,.in .draw polygon,.in .draw polyline{
+    animation:drawLine 2.4s ease forwards;
+  }
+  .bobble{animation:bobble 2.4s ease-in-out infinite}
+</style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="side-lines"></div>
+
+<header>
+  <div class="h-date">〚 <span id="date-now"></span> 〛</div>
+  <div class="h-logo-wrap">
+    <img class="h-logo-img" src="images/doteppan_logo.png" alt="どてっぱん">
+    <div class="h-logo-sub">RECRUIT 2026</div>
+  </div>
+  <div class="h-menu">MENU</div>
+</header>
+
+<nav class="side-nav">
+  <ul>
+    <li><a href="#story">STORY</a></li>
+    <li><a href="#interviews">PEOPLE</a></li>
+    <li><a href="#offduty">OFF-DUTY</a></li>
+    <li><a href="#info">RECRUIT</a></li>
+    <li><a href="#entry">ENTRY</a></li>
+  </ul>
+</nav>
+<div class="copy">@ Umapro, Inc.</div>
+
+<main class="story" id="story">
+  <div class="notebooks">
+
+    <article class="notebook reveal">
+      <div class="nb-text">
+        <div class="nb-index"><small>NO. 01</small>01</div>
+        <div class="nb-ja">
+          はじめは、<br>
+          誰にも知られない<br>
+          お店でした。
+        </div>
+        <div class="nb-en">At first, we were just one small shop<br>no one knew.</div>
+      </div>
+      <div class="nb-vis">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="draw">
+          <line x1="40" y1="320" x2="360" y2="320" stroke="#1a1714" stroke-width="1" fill="none"/>
+          <rect x="120" y="160" width="160" height="160" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <polyline points="110,165 200,120 290,165" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <rect x="180" y="240" width="40" height="80" stroke="#1a1714" stroke-width="1.2" fill="none"/>
+          <line x1="170" y1="240" x2="230" y2="240" stroke="#d4452e" stroke-width="3"/>
+          <line x1="180" y1="240" x2="180" y2="262" stroke="#d4452e" stroke-width="1"/>
+          <line x1="200" y1="240" x2="200" y2="262" stroke="#d4452e" stroke-width="1"/>
+          <line x1="220" y1="240" x2="220" y2="262" stroke="#d4452e" stroke-width="1"/>
+          <line x1="135" y1="200" x2="170" y2="200" stroke="#1a1714" stroke-width="1"/>
+          <line x1="230" y1="200" x2="265" y2="200" stroke="#1a1714" stroke-width="1"/>
+          <line x1="152" y1="180" x2="152" y2="220" stroke="#1a1714" stroke-width="1"/>
+          <line x1="247" y1="180" x2="247" y2="220" stroke="#1a1714" stroke-width="1"/>
+          <ellipse cx="320" cy="195" rx="18" ry="24" stroke="#d4452e" stroke-width="1.8" fill="none" class="bobble"/>
+          <line x1="320" y1="171" x2="320" y2="160" stroke="#1a1714" stroke-width="1"/>
+          <line x1="302" y1="195" x2="338" y2="195" stroke="#d4452e" stroke-width=".7"/>
+          <line x1="304" y1="186" x2="336" y2="186" stroke="#d4452e" stroke-width=".7"/>
+          <line x1="304" y1="204" x2="336" y2="204" stroke="#d4452e" stroke-width=".7"/>
+          <circle cx="70" cy="280" r="2" fill="#1a1714"/>
+        </svg>
+      </div>
+    </article>
+
+    <article class="notebook reveal">
+      <div class="nb-text">
+        <div class="nb-index"><small>NO. 02</small>02</div>
+        <div class="nb-ja">
+          それでも、<br>
+          「目の前のお客様に<br>
+          何ができるか」を、<br>
+          毎日考えてきました。
+        </div>
+        <div class="nb-en">Yet we kept asking ourselves,<br>"What can we do for the customer<br>in front of us today?"</div>
+      </div>
+      <div class="nb-vis photo">
+        <div class="frame"><img src="images/monja_cooking.jpg" alt="鉄板の上で焼き上がるもんじゃ"></div>
+      </div>
+    </article>
+
+    <article class="notebook reveal">
+      <div class="nb-text">
+        <div class="nb-index"><small>NO. 03</small>03</div>
+        <div class="nb-ja">
+          派手じゃなくても<br>
+          構いません。<br>
+          泥臭くても、<br>
+          人の力で広げることを<br>
+          大切にしてきました。
+        </div>
+        <div class="nb-en">It didn't have to be flashy.<br>We chose to grow with people,<br>one connection at a time.</div>
+      </div>
+      <div class="nb-vis">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="draw">
+          <line x1="40" y1="330" x2="360" y2="330" stroke="#1a1714" stroke-width="1"/>
+          <circle cx="130" cy="180" r="22" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <path d="M108 220 L108 290 L120 290 L120 330 M152 220 L152 290 L140 290 L140 330" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <path d="M108 220 Q130 210 152 220" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <line x1="152" y1="230" x2="190" y2="240" stroke="#1a1714" stroke-width="1.5"/>
+          <circle cx="270" cy="180" r="22" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <path d="M248 220 L248 290 L260 290 L260 330 M292 220 L292 290 L280 290 L280 330" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <path d="M248 220 Q270 210 292 220" stroke="#1a1714" stroke-width="1.5" fill="none"/>
+          <line x1="248" y1="230" x2="210" y2="240" stroke="#1a1714" stroke-width="1.5"/>
+          <circle cx="200" cy="240" r="5" fill="#d4452e" stroke="#d4452e" stroke-width="1"/>
+          <path d="M150 130 Q200 100 250 130" stroke="#d4452e" stroke-width="1.2" fill="none" stroke-dasharray="3,4"/>
+          <path d="M195 110 Q190 102 200 102 Q210 102 205 110 L200 118 Z" stroke="#d4452e" stroke-width="1.2" fill="none"/>
+        </svg>
+      </div>
+    </article>
+
+    <article class="notebook reveal">
+      <div class="nb-text">
+        <div class="nb-index"><small>NO. 04</small>04</div>
+        <div class="nb-ja">
+          私たちは、<br>
+          どんなときも<br>
+          「人」を真ん中に<br>
+          置いてきました。
+        </div>
+        <div class="nb-en">Through it all,<br>we've kept people at the heart<br>of everything we do.</div>
+      </div>
+      <div class="nb-vis photo">
+        <div class="frame"><img src="images/store_exterior.jpg" alt="どてっぱん店舗外観"></div>
+      </div>
+    </article>
+
+    <article class="notebook reveal">
+      <div class="nb-text">
+        <div class="nb-index"><small>NO. 05</small>05</div>
+        <div class="nb-ja">
+          その先に、<br>
+          もんじゃという食文化を<br>
+          <em>世界へ届ける道</em>が<br>
+          あると信じていたから<br>
+          です。
+        </div>
+        <div class="nb-en">Because we believed this path leads<br>monjayaki — and our culture —<br>to the world.</div>
+      </div>
+      <div class="nb-vis">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="draw">
+          <circle cx="200" cy="220" r="110" stroke="#1a1714" stroke-width="1.8" fill="none"/>
+          <ellipse cx="200" cy="220" rx="110" ry="35" stroke="#1a1714" stroke-width="1" fill="none"/>
+          <ellipse cx="200" cy="220" rx="35" ry="110" stroke="#1a1714" stroke-width="1" fill="none"/>
+          <path d="M150 175 Q160 165 175 170 Q185 175 180 185 Q170 190 155 188 Z" stroke="#1a1714" stroke-width="1" fill="#1a1714" opacity=".15"/>
+          <path d="M210 200 Q235 195 250 210 Q255 230 240 235 Q220 232 215 220 Z" stroke="#1a1714" stroke-width="1" fill="#1a1714" opacity=".15"/>
+          <path d="M155 255 Q180 250 195 265 Q185 280 170 278 Z" stroke="#1a1714" stroke-width="1" fill="#1a1714" opacity=".15"/>
+          <ellipse cx="200" cy="80" r="22" stroke="#d4452e" stroke-width="2" fill="none"/>
+          <line x1="200" y1="58" x2="200" y2="48" stroke="#1a1714" stroke-width="1.2"/>
+          <line x1="200" y1="102" x2="200" y2="110" stroke="#1a1714" stroke-width="1.2"/>
+          <line x1="178" y1="80" x2="222" y2="80" stroke="#d4452e" stroke-width=".7"/>
+          <line x1="180" y1="72" x2="220" y2="72" stroke="#d4452e" stroke-width=".7"/>
+          <line x1="180" y1="88" x2="220" y2="88" stroke="#d4452e" stroke-width=".7"/>
+          <g stroke="#d4452e" stroke-width="1.5" fill="none">
+            <path d="M310 130 Q330 110 350 100"/>
+            <polyline points="346,96 350,100 346,104"/>
+            <path d="M90 130 Q70 110 50 100"/>
+            <polyline points="54,96 50,100 54,104"/>
+            <path d="M310 310 Q330 330 350 340"/>
+            <polyline points="346,336 350,340 346,344"/>
+            <path d="M90 310 Q70 330 50 340"/>
+            <polyline points="54,336 50,340 54,344"/>
+          </g>
+        </svg>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<section class="outro reveal">
+  <div class="outro-mark">— OUR PATH —</div>
+  <p class="outro-text">
+    こうした地道な歩みを、<br>
+    一杯ずつ・一枚ずつ積み重ねてきました。<br>
+    これからも、<em>人の力で</em>、<br>
+    もんじゃを日本一のブランドへ。
+  </p>
+  <a href="#interviews" class="btn-cta">
+    <span>OUR PEOPLE</span>
+    <span class="arrow"></span>
+  </a>
+</section>
+
+<section class="interviews" id="interviews">
+  <div class="iv-inner">
+    <div class="sec-head reveal">
+      <span class="num">01</span>
+      <span class="label">— PEOPLE</span>
+      <h2>言葉ではなく、人で。</h2>
+    </div>
+    <p class="iv-lead reveal">
+      うちの一番の強みは、<br>
+      ここで働く人たちです。<br>
+      求人票では伝わらない、<br>
+      リアルな声を聞いてください。
+    </p>
+
+    <article class="iv-card reveal">
+      <div class="iv-photo">
+        <div class="placeholder">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="30" cy="22" r="10"/>
+            <path d="M12 52 Q12 36 30 36 Q48 36 48 52"/>
+          </svg>
+          <div>PHOTO COMING<br>6月撮影後に差し替え</div>
+        </div>
+      </div>
+      <div class="iv-body">
+        <div class="iv-no">INTERVIEW 01</div>
+        <h3 class="iv-title">
+          ガス設備の現場から、ブランドの最前線へ ──<br>
+          同級生からの一通の連絡が、人生を変えた。
+        </h3>
+        <div class="iv-meta">
+          <div class="iv-name"><small>NISHIMURA KENTO</small>西村 健人</div>
+          <div class="iv-role">事業開発本部長</div>
+        </div>
+        <div class="iv-text">
+          <p>関西の大手ガス会社で13年間、施工管理エンジニアとして働いてきました。一級資格を複数持ち、現場のすべてを知り尽くした自負もあった。でも、ある日ふと思ったんです。「このままでいいのか」と。</p>
+          <p class="q">転職のきっかけは何でしたか？</p>
+          <p>同級生からの一本の連絡でした。「うちで一緒にやらないか」と。最初は「飲食店？自分に何ができるんだろう」と戸惑いました。でも、話を聞いて気づいたんです。エンジニアとして現場を回してきた力は、店舗開発でも、FC加盟店のオーナー対応でも、必ず活きると。</p>
+          <p class="q">いまの仕事の面白さは？</p>
+          <p>香港、タイ、韓国 ── 海外マスターFCの交渉も、立地スカウティングも、すべてが「ゼロから道をつくる」仕事です。エンジニア時代に培った段取り力と、人と向き合う粘り強さ。両方を活かせる場所が、ここにありました。</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="iv-card reveal">
+      <div class="iv-photo">
+        <img src="images/staff_purple.jpg" alt="スタッフ写真">
+      </div>
+      <div class="iv-body">
+        <div class="iv-no">INTERVIEW 02</div>
+        <h3 class="iv-title">
+          ソムリエだった私が、<br>
+          もんじゃ屋で「日本一」を目指す理由。
+        </h3>
+        <div class="iv-meta">
+          <div class="iv-name"><small>STAFF NAME</small>──（仮名）</div>
+          <div class="iv-role">エリアマネジャー</div>
+        </div>
+        <div class="iv-text">
+          <p>もともとはホテルのソムリエでした。ワインの世界に長くいて、「食」というものに、自分なりの美学を持っていたつもりです。</p>
+          <p class="q">なぜ、もんじゃの世界へ？</p>
+          <p>あるとき、どてっぱんに食べに来たんです。鉄板の上で焼き上がっていくもんじゃを見て、お客様の顔が変わっていく瞬間を見て ──「ああ、これは“食”じゃなくて“体験”なんだ」と気づいた。ワインを注ぐ瞬間と、ヘラを動かす瞬間。やっていることの本質は、同じだと思ったんです。</p>
+          <p class="q">「日本一」とは？</p>
+          <p>もんじゃという料理は、まだ誰も本気でブランドにしていない。寿司や天ぷらと並ぶ「日本を代表する料理」として、世界に届けられる余地が、ここにはあります。その挑戦の真ん中にいたい。だから、私は今ここにいます。</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="iv-card reveal">
+      <div class="iv-photo">
+        <img src="images/staff_tsukishima.jpg" alt="スタッフ写真">
+      </div>
+      <div class="iv-body">
+        <div class="iv-no">INTERVIEW 03</div>
+        <h3 class="iv-title">
+          看護師から、もんじゃ屋へ ──<br>
+          「人を支える仕事」は、職業を選ばない。
+        </h3>
+        <div class="iv-meta">
+          <div class="iv-name"><small>STAFF NAME</small>──（仮名）</div>
+          <div class="iv-role">チーフ（店長）</div>
+        </div>
+        <div class="iv-text">
+          <p>前職は看護師でした。誰かを支えること、寄り添うこと、それが仕事の核だと思って働いてきました。</p>
+          <p class="q">業界が違いすぎませんか？</p>
+          <p>正直、最初はそう思いました。でも、入ってみてわかったんです。お客様一人ひとりの「今日は何があったのかな」「どんな話を聞いてほしいのかな」に寄り添うことは、看護の現場でやってきたことと、全く同じだったんです。</p>
+          <p class="q">いま、店長として大切にしていることは？</p>
+          <p>スタッフ一人ひとりに、ちゃんと「いま、どう？」と声をかけること。これは病棟で学んだことです。お客様だけでなく、一緒に働く仲間こそ、一番大切な「人」だから。「人を何よりも大切にする」── このバリューが、私にはしっくりきました。</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="offduty" id="offduty">
+  <div class="od-inner">
+    <div class="sec-head reveal">
+      <span class="num">02</span>
+      <span class="label">— OFF-DUTY</span>
+      <h2>仕事以外の、私たち。</h2>
+    </div>
+    <p class="od-lead reveal">
+      鉄板の前ではない、<em>素の顔</em>。<br>
+      仲間と笑い、騒ぎ、ふざける。<br>
+      そんな時間も、私たちの一部です。
+    </p>
+    <div class="od-grid reveal">
+      <div class="od-photo tall">
+        <img src="images/staff_sapporo.jpg" alt="札幌店のスタッフ">
+        <div class="cap">
+          <div class="tag">— ON THE FLOOR</div>
+          <div class="ttl">鉄板の前は、いつも本気。</div>
+        </div>
+      </div>
+      <div class="od-photo tall">
+        <img src="images/staff_karaoke.jpg" alt="社内イベントの様子">
+        <div class="cap">
+          <div class="tag">— AFTER WORK</div>
+          <div class="ttl">マイクを握れば、年齢も役職も関係ない。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="info-inner">
+
+    <div class="why-block reveal">
+      <div class="sec-head">
+        <span class="num">03</span>
+        <span class="label">— WHY US</span>
+        <h2>人で勝つ、5年間。</h2>
+      </div>
+      <p class="why-lead">
+        広告でも資本でもなく、「人」で広げてきた5年間。<br>
+        その実感を、数字でお見せします。
+      </p>
+      <div class="why-stats">
+        <div class="stat-cell">
+          <div class="n">12<small>店舗</small></div>
+          <div class="t">2021年に1店舗からスタート</div>
+        </div>
+        <div class="stat-cell">
+          <div class="n">90<small>%</small></div>
+          <div class="t">社員リファラル採用比率</div>
+        </div>
+        <div class="stat-cell">
+          <div class="n">10<small>倍</small></div>
+          <div class="t">アルバイト採用倍率</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="job-block reveal">
+      <div class="sec-head">
+        <span class="num">04</span>
+        <span class="label">— JOB</span>
+        <h2>募集職種</h2>
+      </div>
+      <div class="job-grid">
+        <div class="job-cell">
+          <div class="badge">POSITION 01</div>
+          <h3>店長候補</h3>
+          <p>店舗運営とチームづくりを担い、ゆくゆくは店舗全体の責任者（チーフ）へ。マネジメントに挑戦したい方へ。</p>
+        </div>
+        <div class="job-cell">
+          <div class="badge">POSITION 02</div>
+          <h3>ホール・キッチン</h3>
+          <p>まずは現場の主力として。接客・調理を通じて「どてっぱんらしさ」を体現し、キャプテン・チーフへの道を歩めます。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grade-block reveal">
+      <div class="sec-head">
+        <span class="num">05</span>
+        <span class="label">— CAREER</span>
+        <h2>キャリアと等級</h2>
+      </div>
+      <div class="grade-list">
+        <div class="grade-row">
+          <div class="g-name"><small>GRADE 01</small>キャプテン</div>
+          <div class="g-role"><b>店舗の時間帯責任者</b>入社後はここからスタート。担当時間帯のお店を任されます。</div>
+          <div class="g-pay">25〜35<small>万円／月</small></div>
+        </div>
+        <div class="grade-row">
+          <div class="g-name"><small>GRADE 02</small>チーフ</div>
+          <div class="g-role"><b>店舗全体の責任者（店長）</b>P/L・売上・人材育成に責任を持つ、店舗の店長ポジション。</div>
+          <div class="g-pay">35<small>万円〜／月</small></div>
+        </div>
+        <div class="grade-row">
+          <div class="g-name"><small>GRADE 03</small>エリアマネジャー</div>
+          <div class="g-role"><b>複数店舗の統括</b>エリア全体の数値とチーム育成に責任を持つ、現場の最高峰。</div>
+          <div class="g-pay">40<small>万円〜／月</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="req-block reveal">
+      <div class="sec-head">
+        <span class="num">06</span>
+        <span class="label">— REQUIREMENTS</span>
+        <h2>募集要項</h2>
+      </div>
+      <table class="req-tbl">
+        <tr><th>雇用形態</th><td>正社員（中途）</td></tr>
+        <tr><th>勤務地</th><td>各店舗（関東・関西・中部・北海道）。希望を考慮します。</td></tr>
+        <tr><th>給与</th><td>月給25万円〜（経験・役職により決定）</td></tr>
+        <tr><th>選考フロー</th><td>カジュアル面談 → 面接 → 内定（3ステップ）</td></tr>
+        <tr><th>福利厚生</th><td>社会保険完備 ／ 交通費全額支給 ／ 制服貸与 ／ 社員割引 ／ 昇給あり ／ 髪色・髪型自由 ／ ピアス・ネイルOK</td></tr>
+      </table>
+      <div class="flow">
+        <div class="step"><div class="num">01</div><b>カジュアル面談</b><small>まずは気軽に、お互いを知る場から。</small></div>
+        <div class="step"><div class="num">02</div><b>面接</b><small>想いと、これからのキャリアを。</small></div>
+        <div class="step"><div class="num">03</div><b>内定</b><small>「人で勝つ」を目指す仲間に。</small></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="entry-block" id="entry">
+  <div class="entry-inner">
+    <div class="entry-mark">— ENTRY —</div>
+    <h2>まずは、話してみませんか。</h2>
+    <p class="lead">「人で勝つ」に挑む仲間を待っています。<br>カジュアル面談から、お気軽にどうぞ。</p>
+    <div class="form" onsubmit="return false;">
+      <label>お名前 / NAME</label>
+      <input type="text" placeholder="山田 太郎">
+      <label>メールアドレス / EMAIL</label>
+      <input type="email" placeholder="example@email.com">
+      <label>ご希望の職種 / POSITION</label>
+      <select>
+        <option>店長候補（チーフ候補）</option>
+        <option>ホール・キッチン</option>
+        <option>まだ決めていない／相談したい</option>
+      </select>
+      <label>当社をどこで知りましたか / SOURCE</label>
+      <select>
+        <option>Instagram</option>
+        <option>Facebook / Meta広告</option>
+        <option>X（旧Twitter）</option>
+        <option>Wantedly</option>
+        <option>社員からの紹介</option>
+        <option>Indeed・求人サイト</option>
+        <option>その他</option>
+      </select>
+      <label>メッセージ / MESSAGE（任意）</label>
+      <textarea rows="3" placeholder="ご質問やご希望があればご記入ください"></textarea>
+      <button class="submit" type="button">SEND →</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img class="f-logo" src="images/doteppan_logo.png" alt="どてっぱん">
+  <div>東京もんじゃ・鉄板焼酒場 どてっぱん ／ 株式会社うまプロ</div>
+  <div>「Umaiで世界を平和にする」</div>
+  <div style="margin-top:14px">
+    <a href="https://doteppan.com/" target="_blank" rel="noopener">公式サイト</a> ／ <a href="https://www.instagram.com/doteppan" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <div style="margin-top:14px;opacity:.5">© 2026 Umapro Inc.</div>
+</footer>
+
+<script>
+  (function(){
+    var d = new Date();
+    var y = d.getFullYear();
+    var m = String(d.getMonth()+1).padStart(2,'0');
+    var day = String(d.getDate()).padStart(2,'0');
+    document.getElementById('date-now').textContent = y + '.' + m + '.' + day;
+  })();
+
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){
+      els.forEach(function(el){el.classList.add('in')});
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:.15});
+    els.forEach(function(el){io.observe(el)});
+  })();
+
+  (function(){
+    var hd = document.querySelector('header');
+    window.addEventListener('scroll', function(){
+      var y = window.scrollY;
+      if(y > 80){
+        hd.style.background = 'rgba(247,243,234,.92)';
+        hd.style.backdropFilter = 'blur(8px)';
+        hd.style.borderBottom = '1px solid rgba(26,23,20,.08)';
+      }else{
+        hd.style.background = 'transparent';
+        hd.style.backdropFilter = 'none';
+        hd.style.borderBottom = 'none';
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
